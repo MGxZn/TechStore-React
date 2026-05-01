@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* HEADER */
+.header {
+  background: #020617;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+.header h1 {
+  color: #38bdf8;
+}
+
+.header nav a {
+  color: #cbd5f5;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header nav a:hover {
+  color: #38bdf8;
+}
+
+/* BANNER */
+.banner {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.produtos h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #1e293b;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* IMPORTANTE */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border-color: #38bdf8;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.card p {
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* BOTÃO */
+button {
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0ea5e9, #1d4ed8);
+}
+
+/* SOBRE */
+.sobre {
+  background: #020617;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.sobre p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.8;
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  font-size: 0.9rem;
+}
+
+.card img {
+  height: 140px;
+  object-fit: contain;
+}
